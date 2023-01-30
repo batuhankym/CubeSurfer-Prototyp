@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Cube
   - Obstacle
+  - Point
   layers:
   - Default
   - TransparentFX

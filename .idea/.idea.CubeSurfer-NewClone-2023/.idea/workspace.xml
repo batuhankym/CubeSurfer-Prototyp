@@ -7,6 +7,10 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Score.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Trail.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -64,7 +68,7 @@
       <option name="presentableId" value="Default" />
       <updated>1675071105039</updated>
       <workItem from="1675071114055" duration="60000" />
-      <workItem from="1675076186205" duration="951000" />
+      <workItem from="1675076186205" duration="12078000" />
     </task>
     <servers />
   </component>

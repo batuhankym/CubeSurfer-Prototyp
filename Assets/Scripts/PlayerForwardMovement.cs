@@ -10,21 +10,30 @@ public class PlayerForwardMovement : MonoBehaviour
 
     
     
-    [SerializeField] private float playerForwardSpeed;
+    public float playerForwardSpeed;
 
     private void Start()
     {
+        playerForwardSpeed = 0;
         playerAnim.GetComponent<Animator>();
     }
 
-    void Update()
+    private void Update()
     {
 
+        if (Input.GetMouseButtonDown(0))
+        {
+            playerForwardSpeed = 3;
+        }
         transform.Translate(Vector3.forward * (playerForwardSpeed * Time.deltaTime));
 
         if (playerForwardSpeed > 0)
         {
             playerAnim.SetTrigger("run");
+        }
+        else
+        {
+            playerAnim.SetTrigger("idle");
         }
     }
 }
