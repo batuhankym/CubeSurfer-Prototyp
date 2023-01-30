@@ -10,6 +10,8 @@ public class StackController : MonoBehaviour
     public List<GameObject> _lastCube = new List<GameObject>();
     public GameObject lastCube;
     public GameObject parentObject;
+    [SerializeField] private Transform[] Scores;
+    private int scoreIndex;
     
     private void Start()
     {
@@ -26,6 +28,20 @@ public class StackController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Cube"))
         {
+            Scores[scoreIndex].gameObject.SetActive(true);
+            Scores[scoreIndex].transform.position = transform.position;
+
+
+            if (scoreIndex < 4)
+            {
+                scoreIndex++;
+
+            }
+            else
+            {
+                scoreIndex = 0;
+            }
+            
             other.gameObject.tag = "Untagged";
             other.gameObject.transform.SetParent(transform);
             _lastCube.Add(other.gameObject);
