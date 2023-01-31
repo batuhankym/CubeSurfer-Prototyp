@@ -29,6 +29,11 @@ public class StackController : MonoBehaviour
     private void Update()
     {
         lastCube = _lastCube[_lastCube.Count - 1];
+        if (_lastCube.Count <= 1)
+        {
+            transform.position = new Vector3(transform.position.x, 0, transform.position.z);
+            parentObject.transform.position = new Vector3(transform.position.x, 0, transform.position.z);
+        }
 
     }
 
