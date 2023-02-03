@@ -8,7 +8,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RotatingFinishLine.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Score.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ShowMultiplierAmount.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Trail.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -70,6 +72,11 @@
       <workItem from="1675071114055" duration="60000" />
       <workItem from="1675076186205" duration="12078000" />
       <workItem from="1675159238292" duration="644000" />
+      <workItem from="1675161635793" duration="20120000" />
+      <workItem from="1675374794988" duration="5000" />
+      <workItem from="1675374853242" duration="676000" />
+      <workItem from="1675377891945" duration="3726000" />
+      <workItem from="1675417621137" duration="2318000" />
     </task>
     <servers />
   </component>

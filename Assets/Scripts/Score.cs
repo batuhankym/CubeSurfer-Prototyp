@@ -7,8 +7,14 @@ using TMPro;
 public class Score : MonoBehaviour
 {
    public static Score Instance;
-   
+   public StackController _stackController;
    public TextMeshProUGUI scoreText;
+
+
+   private void Start()
+   {
+      _stackController.GetComponent<StackController>();
+   }
 
    private void Awake()
    {
@@ -26,6 +32,11 @@ public class Score : MonoBehaviour
    public void UpdateScore(int score)
    {
       scoreText.text = score.ToString();
+      if (_stackController.isMultiply)
+      {
+         score *= 8;
+         scoreText.text = score.ToString();
+      }
    }
 
 }

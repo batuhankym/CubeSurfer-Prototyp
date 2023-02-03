@@ -6,6 +6,7 @@ using DG.Tweening;
 public class UIManager : MonoBehaviour
 {
     public GameObject touchButton, slideImg;
+    public GameObject winCondition;
 
 
     void Start()
@@ -20,4 +21,7 @@ public class UIManager : MonoBehaviour
             slideImg.SetActive(false);
         }
     }
+
+  
+    
 }

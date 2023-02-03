@@ -22,5 +22,12 @@ public class Cubes : MonoBehaviour
             _stackController.RemoveLastCube();
             transform.parent = null;
         }
+        if (other.gameObject.CompareTag("Tower"))
+        {
+            other.gameObject.tag = "Untagged";
+            _stackController.ShrinkParentYPositionForTower();
+            _stackController.RemoveLastCube();
+            transform.parent = null;
+        }
     }
 }
