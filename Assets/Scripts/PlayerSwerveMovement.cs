@@ -19,8 +19,10 @@ public class PlayerSwerveMovement : MonoBehaviour
         displacementX = SmoothOutDisplacement(displacementX);
             
         var newPosition = GetNewLocalPosition(displacementX);
+        
             
         newPosition = GetLimitedLocalPosition(newPosition);
+        
 
         transform.localPosition = newPosition;
     }
@@ -34,6 +36,7 @@ public class PlayerSwerveMovement : MonoBehaviour
     {
         var lastPosition = transform.localPosition;
         var newPositionX = lastPosition.x + displacementX;
+        var lerpPos = Mathf.Lerp(newPositionX, 0, 1);
         var newPosition = new Vector3(newPositionX, lastPosition.y, lastPosition.z);
         return newPosition;
     }

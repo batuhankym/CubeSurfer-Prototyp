@@ -18,6 +18,8 @@ public class ShowMultiplierAmount : MonoBehaviour
     {
         vcam.GetComponent<CinemachineVirtualCamera>();
         mainCam = Camera.main;
+        transform.DOMoveY(1, 1.5f);
+
     }
 
     private void OnEnable()
@@ -25,10 +27,9 @@ public class ShowMultiplierAmount : MonoBehaviour
         Instantiate(confettiVFX, confettiVFX1.transform.position, quaternion.identity);
         Instantiate(confettiVFX, finishLine.transform.position, quaternion.identity);
         transform.DOMoveY(1.5f, 0.5f);
-       transform.position = new Vector3(player.transform.position.x +0.5f, 6, player.transform.position.z);
        transform.DOMoveY(3, 0.5f);
        //Invoke("InActive",0.5f);
-    }
+    }   
 
     private void InActive()
     {
@@ -36,6 +37,8 @@ public class ShowMultiplierAmount : MonoBehaviour
     }
     void Update()
     {
+        transform.position = new Vector3(player.transform.position.x +0.5f, transform.position.y, player.transform.position.z);
+
         transform.LookAt(transform.position + mainCam.transform.forward);
         mainCam.transform.RotateAround(player.position , Vector3.up ,20 *Time.deltaTime);
         vcam.transform.RotateAround(player.position,Vector3.up, 45 * Time.deltaTime);

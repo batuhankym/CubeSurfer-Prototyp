@@ -104,6 +104,7 @@ public class StackController : MonoBehaviour
             playerForwardMovement.playerForwardSpeed = 0;
             victoryAnim.SetTrigger("victory");
             _uiManager.winCondition.SetActive(true);
+            _uiManager.winCondition.transform.DOScale(1.3f, 2).SetLoops(10000, LoopType.Yoyo).SetEase(Ease.InOutSine);
             playerForwardMovement.GetComponent<PlayerForwardMovement>().enabled = false;
             _playerSwerveMovement.GetComponent<PlayerSwerveMovement>().enabled = false;
 
